@@ -11,10 +11,11 @@ import math
 
 ### Read the csv files for training and test set 
 ### The file is structured in the following way:
-### -Each line contains a different restaurant
-### -First column name of the restaurant
-### -Second column type of cuisine (some mistakes, the scraper should be improved)
-### -All the other columns contain the different langauges supported by TripAdvisor
+### -Each line corresponds to a different restaurant
+### -First column: name of the restaurant
+### -Second column: type of cuisine
+### -All the other columns correspond to the different languages supported by TripAdvisor 
+### -For each restaurant and language the number of reviews has been collected
 
 trip=pd.read_csv("restaurants.csv")
 
